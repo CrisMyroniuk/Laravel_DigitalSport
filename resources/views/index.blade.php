@@ -3,7 +3,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Monoton&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/home.css">
 @endsection
 @section("principal")
   <div id="content">
@@ -12,13 +13,13 @@
       <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div  class="carousel-item active" data-interval="10000">
-            <img class="banner" src="img/Portada1.jpg" class="d-block w-100" alt="...">
+            <img class="banner" src="/img/Portada1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-interval="2000">
-            <img class="banner" src="img/Portada2.png" class="d-block w-100" alt="...">
+            <img class="banner" src="/img/Portada2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img class="banner" src="img/Portada3.jpg" class="d-block w-100" alt="">
+            <img class="banner" src="/img/Portada3.jpg" class="d-block w-100" alt="">
 
 
           </div>
