@@ -18,7 +18,7 @@
     <div class="row">
 
     <div class="col-xs-12 col-md-6 col-lg-4">
-         <a href="producto.php"><img class="foto zoom" src="img/Remeras/Remera1.jpg" alt=""></a>
+         <a href="/producto"><img class="foto zoom" src="img/Remeras/Remera1.jpg" alt=""></a>
          <div class="titulo-ropa">
            <span>Remera UnderArmour Trainning</span>
          </div>

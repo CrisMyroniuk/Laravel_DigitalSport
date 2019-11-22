@@ -21,3 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/remeras','ProductoController@remera');
 Route::get('/pantalones','ProductoController@pantalon');
 Route::get('/musculosas','ProductoController@musculosa');
+Route::get('/buzos','ProductoController@buzo');
+Route::get('/accesorios','ProductoController@accesorio');
+Route::get('/zapatillas','ProductoController@zapatilla');
+Route::get('/producto','ProductoController@productoSeleccionado');

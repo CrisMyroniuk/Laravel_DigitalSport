@@ -16,4 +16,17 @@ class ProductoController extends Controller
   public function musculosa(){
     return view('musculosas');
   }
+  public function buzo(){
+    return view('buzos');
+  }
+  public function accesorio(){
+    return view('accesorios');
+  }
+  public function zapatilla(){
+    return view('zapatillas');
+  }
+  public function productoSeleccionado(){
+    return view('producto');
+  }
+
 }
