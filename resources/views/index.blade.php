@@ -49,8 +49,8 @@
 
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-          <a href="pantalon.php"><img class="foto zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
-          <a href="pantalon.php">
+          <a href="/pantalones"><img class="foto zoom" src="img/imgInicio/Pantalon.jpg" alt=""></a>
+          <a href="/pantalones">
             <div class="indicador">
               <h3>Shorts</h3>
             </div>
@@ -58,8 +58,8 @@
 
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="buzos.php"><img class="foto zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
-           <a href="buzos.php">
+           <a href="/buzos"><img class="foto zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
+           <a href="/buzos">
              <div class="indicador">
                <h3>Buzos</h3>
              </div>
@@ -71,8 +71,8 @@
         </div>-->
         <div class="col-xs-12 col-md-6 col-lg-4">
 
-           <a href="musculosas.php"><img class="foto zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
-           <a href="musculosas.php">
+           <a href="/musculosas"><img class="foto zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
+           <a href="/musculosas">
              <div class="indicador">
                <h3>Musculosas</h3>
              </div>
@@ -80,8 +80,8 @@
 
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="zapatillas.php"><img class="foto zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
-           <a href="zapatillas.php">
+           <a href="/zapatillas"><img class="foto zoom" src="img/imgInicio/Zapatillas.jpg" alt=""></a>
+           <a href="/zapatillas">
              <div class="indicador">
                <h3>Zapatillas</h3>
              </div>
@@ -90,8 +90,8 @@
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
 
-           <a href="accesorios.php"><img class="foto zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
-           <a href="accesorios.php">
+           <a href="/accesorios"><img class="foto zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
+           <a href="/accesorios">
              <div class="indicador">
                <h3>Accesorios</h3>
              </div>
