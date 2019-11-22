@@ -59,9 +59,9 @@
    </header>
     </div>
 
-  <div id="container">
+
 @yield("principal")
-  </div>
+  
   <footer>
 
 
