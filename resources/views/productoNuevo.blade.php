@@ -16,7 +16,7 @@
       <div class="titulo">
         <h1>Producto Nuevo</h1>
       </div>
-      <form class="" action="" method="post">
+      <form class="" action="/nuevoProducto" method="post">
         {{csrf_field()}}
         <div class="form-group">
           <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto">
@@ -33,8 +33,8 @@
         <div class="form-group">
           <select class="custom-select">
             <option selected>Seleccione una Marca</option>
-            {{-- @foreach ($marca as $mar)
-                <option value="{{$mar->id}}" @if($mar->id == old('marca_id')) selected @endif>{{$mar->nombre}}</option>
+             {{-- @foreach ($marcas as $marca)
+                <option value="{{$marca->id}}" @if($marca->id == old('marca_id')) selected @endif>{{$marca->nombre}}</option>
             @endforeach --}}
           </select>
         </div>

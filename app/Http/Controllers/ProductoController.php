@@ -38,8 +38,8 @@ class ProductoController extends Controller
   }
   public function newMarca()
   {
-      $marca = Marca::all();
-      return view('productoNuevo', compact('marca'));
+      $marcas = Marca::all();
+      return view('productoNuevo', compact('marcas'));
   }
   public function newCategoria()
   {
@@ -62,7 +62,7 @@ class ProductoController extends Controller
     $peliculaNueva->categoria_id=$req['categoria_id'];
     $movie->imagen = $imagen;
     $peliculaNueva->save();
-    
+
 
   }
 
