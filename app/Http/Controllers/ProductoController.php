@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Producto;
+use App\Categoria;
+use App\Marca;
 
 class ProductoController extends Controller
 {
@@ -33,6 +35,35 @@ class ProductoController extends Controller
   }
   public function modificarProducto(){
     return view('modificarProducto');
+  }
+  public function newMarca()
+  {
+      $marca = Marca::all();
+      return view('productoNuevo', compact('marca'));
+  }
+  public function newCategoria()
+  {
+      $categoria = Categoria::all();
+      return view('productoNuevo', compact('categoria'));
+  }
+  public function agregarProducto(Request $req){
+    $imagen = '';
+    //si mandé una imagen la guardo
+    if ($req->file('imagen')) {
+        $imagen = $req->file('imagen')->store('public');
+        $imagen = basename($imagen);
+    }
+    $productoNuevo = new Producto();
+    $peliculaNueva->nombre=$req['nombre'];
+    $peliculaNueva->descripcion=$req['descripcion'];
+    $peliculaNueva->precio=$req['precio'];
+    $peliculaNueva->cantidadStock=$req['cantidadStock'];
+    $peliculaNueva->marca_id=$req['marca_id'];
+    $peliculaNueva->categoria_id=$req['categoria_id'];
+    $movie->imagen = $imagen;
+    $peliculaNueva->save();
+    
+
   }
 
 }

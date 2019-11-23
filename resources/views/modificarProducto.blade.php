@@ -16,7 +16,7 @@
       <div class="titulo">
         <h1>Modificar Producto</h1>
       </div>
-      <form class="" action="index.html" method="post">
+      <form class="" action="/modificarProducto" method="post">
         <div class="form-group">
           <select class="custom-select">
             <option selected>Seleccione el producto a modificar</option>
@@ -36,6 +36,7 @@
           <input type="number" class="form-control" id="exampleFormControlInput1" name="stock" placeholder="Cantidad en Stock" disabled>
         </div>
         <div class="form-group">
+
           <select class="custom-select" disabled>
             <option selected>Seleccione una Marca</option>
             <option value=""></option>
@@ -54,8 +55,9 @@
           </div>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-lg " disabled>Cargar Producto</button>
+          <button type="submit" class="btn btn-primary btn-lg " disabled>Modificar Producto</button>
         </div>
+        
       </form>
 
 

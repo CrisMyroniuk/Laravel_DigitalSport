@@ -26,4 +26,7 @@ Route::get('/accesorios','ProductoController@accesorio');
 Route::get('/zapatillas','ProductoController@zapatilla');
 Route::get('/producto','ProductoController@productoSeleccionado');
 Route::get('/nuevoProducto','ProductoController@nuevoProducto');
+Route::post('/nuevoProducto','ProductoController@agregarProducto');
+Route::get('/nuevoProducto', 'ProductoController@newMarca');
+Route::get('/nuevoProducto', 'ProductoController@newCategoria');
 Route::get('/modificarProducto','ProductoController@modificarProducto');

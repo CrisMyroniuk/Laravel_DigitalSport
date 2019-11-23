@@ -16,7 +16,8 @@
       <div class="titulo">
         <h1>Producto Nuevo</h1>
       </div>
-      <form class="" action="index.html" method="post">
+      <form class="" action="" method="post">
+        {{csrf_field()}}
         <div class="form-group">
           <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto">
         </div>
@@ -27,18 +28,22 @@
           <input type="number" class="form-control" id="exampleFormControlInput1" name="precio" placeholder="Precio">
         </div>
         <div class="form-group">
-          <input type="number" class="form-control" id="exampleFormControlInput1" name="stock" placeholder="Cantidad en Stock">
+          <input type="number" class="form-control" id="exampleFormControlInput1" name="cantidadStock" placeholder="Cantidad en Stock">
         </div>
         <div class="form-group">
           <select class="custom-select">
             <option selected>Seleccione una Marca</option>
-            <option value=""></option>
+            {{-- @foreach ($marca as $mar)
+                <option value="{{$mar->id}}" @if($mar->id == old('marca_id')) selected @endif>{{$mar->nombre}}</option>
+            @endforeach --}}
           </select>
         </div>
         <div class="form-group">
           <select class="custom-select">
             <option selected>Seleccione una Categoria</option>
-            <option value=""></option>
+            @foreach ($categoria as $cat)
+                <option value="{{$cat->id}}" @if($cat->id == old('categoria_id')) selected @endif>{{$cat->nombre}}</option>
+            @endforeach
           </select>
         </div>
         <div class="form-group">
