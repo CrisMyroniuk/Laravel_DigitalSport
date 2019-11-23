@@ -28,5 +28,11 @@ class ProductoController extends Controller
   public function productoSeleccionado(){
     return view('producto');
   }
+  public function nuevoProducto(){
+    return view('productoNuevo');
+  }
+  public function modificarProducto(){
+    return view('modificarProducto');
+  }
 
 }

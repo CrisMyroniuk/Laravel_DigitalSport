@@ -8,7 +8,7 @@
 @endsection
 @section("principal")
   <div id="content">
-
+    
     <div id="section">
       <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

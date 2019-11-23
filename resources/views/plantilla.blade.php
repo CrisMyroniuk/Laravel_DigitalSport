@@ -52,6 +52,8 @@
 
       <button type="button" name="button"> <a href="perfil.php"> <img src="img/login.svg" alt=""></a> </button>
       <button type="button" name="button"> <a href="miscompras.php"> <img src="img/carrito.svg" alt=""> </a> </button>
+      <a href="/nuevoProducto">PRODUCTO NUEVO</a>
+      <a href="/modificarProducto">MODIFICAR PRODUCTO</a>
 
 
 
@@ -61,7 +63,7 @@
 
 
 @yield("principal")
-  
+
   <footer>
 
 
