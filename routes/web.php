@@ -27,7 +27,7 @@ Route::get('/zapatillas','ProductoController@zapatilla');
 Route::get('/producto','ProductoController@productoSeleccionado');
 Route::get('/nuevoProducto','ProductoController@nuevoProducto');
 Route::post('/nuevoProducto','ProductoController@agregarProducto');
-Route::get('/nuevoProducto', 'ProductoController@newMarca');
-Route::get('/nuevoProducto', 'ProductoController@newCategoria');
+Route::get('/nuevoProducto', 'ProductoController@newProducto');
+
 Route::get('/modificarProducto','ProductoController@modificarProducto');
 Route::get('/contacto','ContactoController@contacto');

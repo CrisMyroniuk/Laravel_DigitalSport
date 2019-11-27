@@ -8,5 +8,6 @@ class Producto extends Model
 {
   public $table = 'productos';
   public $primaryKey = 'id';
+  protected $guarded=[];
 
 }

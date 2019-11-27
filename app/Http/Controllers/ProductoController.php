@@ -36,15 +36,11 @@ class ProductoController extends Controller
   public function modificarProducto(){
     return view('modificarProducto');
   }
-  public function newMarca()
+  public function newProducto()
   {
       $marcas = Marca::all();
-      return view('productoNuevo', compact('marcas'));
-  }
-  public function newCategoria()
-  {
-      $categoria = Categoria::all();
-      return view('productoNuevo', compact('categoria'));
+      $categorias = Categoria::all();
+      return view('productoNuevo', compact('marcas', 'categorias'));
   }
   public function agregarProducto(Request $req){
     $imagen = '';
@@ -54,14 +50,15 @@ class ProductoController extends Controller
         $imagen = basename($imagen);
     }
     $productoNuevo = new Producto();
-    $peliculaNueva->nombre=$req['nombre'];
-    $peliculaNueva->descripcion=$req['descripcion'];
-    $peliculaNueva->precio=$req['precio'];
-    $peliculaNueva->cantidadStock=$req['cantidadStock'];
-    $peliculaNueva->marca_id=$req['marca_id'];
-    $peliculaNueva->categoria_id=$req['categoria_id'];
-    $movie->imagen = $imagen;
-    $peliculaNueva->save();
+    $productoNuevo->nombre=$req['nombre'];
+  $productoNuevo->descripcion=$req['descripcion'];
+    $productoNuevo->precio=$req['precio'];
+    $productoNuevo->cantidadStock=$req['cantidadStock'];
+    $productoNuevo->marca_id=$req['marca_id'];
+    
+    $productoNuevo->categoria_id=$req['categoria_id'];
+    $productoNuevo->imagen = $imagen;
+    $productoNuevo->save();
 
 
   }

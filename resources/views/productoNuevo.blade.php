@@ -31,17 +31,17 @@
           <input type="number" class="form-control" id="exampleFormControlInput1" name="cantidadStock" placeholder="Cantidad en Stock">
         </div>
         <div class="form-group">
-          <select class="custom-select">
+          <select class="custom-select" name='marca_id'>
             <option selected>Seleccione una Marca</option>
-             {{-- @foreach ($marcas as $marca)
+           @foreach ($marcas as $marca)
                 <option value="{{$marca->id}}" @if($marca->id == old('marca_id')) selected @endif>{{$marca->nombre}}</option>
-            @endforeach --}}
+            @endforeach
           </select>
         </div>
         <div class="form-group">
-          <select class="custom-select">
+          <select class="custom-select"  name='categoria_id'>
             <option selected>Seleccione una Categoria</option>
-            @foreach ($categoria as $cat)
+            @foreach ($categorias as $cat)
                 <option value="{{$cat->id}}" @if($cat->id == old('categoria_id')) selected @endif>{{$cat->nombre}}</option>
             @endforeach
           </select>
