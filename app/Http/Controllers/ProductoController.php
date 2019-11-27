@@ -10,7 +10,9 @@ use App\Marca;
 class ProductoController extends Controller
 {
   public function remera(){
-    return view('remeras');
+    $productos=Producto::all();
+    return view('remeras',compact('productos'));
+  
   }
   public function pantalon(){
     return view('pantalones');
@@ -36,8 +38,9 @@ class ProductoController extends Controller
   public function modificarProducto(){
     $productos=Producto::all();
     return view('modificarProducto',compact('productos'));
-    
+
   }
+
   public function newProducto()
   {
       $marcas = Marca::all();
