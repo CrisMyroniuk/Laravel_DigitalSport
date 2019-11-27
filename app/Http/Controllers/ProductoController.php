@@ -34,7 +34,9 @@ class ProductoController extends Controller
     return view('productoNuevo');
   }
   public function modificarProducto(){
-    return view('modificarProducto');
+    $productos=Producto::all();
+    return view('modificarProducto',compact('productos'));
+    
   }
   public function newProducto()
   {
@@ -42,6 +44,9 @@ class ProductoController extends Controller
       $categorias = Categoria::all();
       return view('productoNuevo', compact('marcas', 'categorias'));
   }
+
+
+
   public function agregarProducto(Request $req){
     $imagen = '';
     //si mandé una imagen la guardo
@@ -55,12 +60,12 @@ class ProductoController extends Controller
     $productoNuevo->precio=$req['precio'];
     $productoNuevo->cantidadStock=$req['cantidadStock'];
     $productoNuevo->marca_id=$req['marca_id'];
-    
+
     $productoNuevo->categoria_id=$req['categoria_id'];
     $productoNuevo->imagen = $imagen;
     $productoNuevo->save();
 
-
+    return redirect('/');
   }
 
 }

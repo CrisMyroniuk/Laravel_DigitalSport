@@ -20,11 +20,13 @@
         <div class="form-group">
           <select class="custom-select">
             <option selected>Seleccione el producto a modificar</option>
-            <option value=""></option>
+            @foreach ($productos as $producto)
+                 <option value="{{$producto->id}}" @if($producto->id == old('marca_id')) selected @endif>{{$producto->nombre}}</option>
+             @endforeach
           </select>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto" disabled>
+          <input value="" type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto" disabled>
         </div>
         <div class="form-group">
           <textarea class="form-control" id="exampleFormControlTextarea1" name="descripcion" rows="3" placeholder="Descripcion" disabled></textarea>
@@ -57,7 +59,7 @@
         <div class="form-group">
           <button type="submit" class="btn btn-primary btn-lg " disabled>Modificar Producto</button>
         </div>
-        
+
       </form>
 
 
