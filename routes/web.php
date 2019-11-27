@@ -30,3 +30,4 @@ Route::post('/nuevoProducto','ProductoController@agregarProducto');
 Route::get('/nuevoProducto', 'ProductoController@newMarca');
 Route::get('/nuevoProducto', 'ProductoController@newCategoria');
 Route::get('/modificarProducto','ProductoController@modificarProducto');
+Route::get('/contacto','ContactoController@contacto');
