@@ -21,7 +21,7 @@
     <div class="contenedor">
       <header>
       <input type="checkbox" id="menu">
-      <label for="menu"><img src="img/menu.svg" alt=""></label>
+      <label for="menu"><img src="/img/menu.svg" alt=""></label>
       <a class="logo" href="index.php"><h1>DIGITAL SPORT></h1></a>
 
      <nav class="menu">

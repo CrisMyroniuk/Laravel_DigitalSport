@@ -10,9 +10,12 @@ use App\Marca;
 class ProductoController extends Controller
 {
   public function remera(){
-    $productos=Producto::all();
-    return view('remeras',compact('productos'));
-  
+    $productos=Producto::paginate(6);
+
+      return view('remeras',compact('productos'));
+
+
+
   }
   public function pantalon(){
     return view('pantalones');
@@ -29,8 +32,15 @@ class ProductoController extends Controller
   public function zapatilla(){
     return view('zapatillas');
   }
-  public function productoSeleccionado(){
-    return view('producto');
+  // public function productoSeleccionado(){
+  //   return view('producto');
+  // }
+  public function productoSeleccionado($id){
+
+    $producto = Producto::find($id);
+
+    return view('producto',compact('producto'));
+
   }
   public function nuevoProducto(){
     return view('productoNuevo');
