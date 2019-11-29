@@ -10,7 +10,7 @@ use App\Marca;
 class ProductoController extends Controller
 {
   public function remera(){
-    $productos=Producto::paginate(6);
+    $productos=Producto::where('categoria_id',1)->paginate(6);
 
       return view('remeras',compact('productos'));
 
@@ -18,7 +18,10 @@ class ProductoController extends Controller
 
   }
   public function pantalon(){
-    return view('pantalones');
+    $productos=Producto::where('categoria_id',6)->paginate(6);
+
+      return view('pantalones',compact('productos'));
+
   }
   public function musculosa(){
     return view('musculosas');

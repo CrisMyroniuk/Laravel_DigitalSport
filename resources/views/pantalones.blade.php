@@ -14,61 +14,19 @@
 
 
   <div class="row">
+    @foreach ($productos as $producto)
+      <div class="col-xs-12 col-md-6 col-lg-4">
+      <a href="/producto/{{$producto['id']}}"><img class="foto zoom" src="{{$producto['imagen']}}" alt=""></a>
+      <div class="titulo-ropa">
+        <span>{{$producto['nombre']}}</span>
+      </div>
+      <div class="precio-ropa">
+        <span>${{$producto['precio']}}</span>
+     </div>
+      </div>
 
-  <div class="col-xs-12 col-md-6 col-lg-4">
-  <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short1.jpg" alt=""></a>
-  <div class="titulo-ropa">
-    <span>Short Nike Sport</span>
-  </div>
-  <div class="precio-ropa">
-    <span>$3000</span>
- </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-    <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short2.jpg" alt=""></a>
-    <div class="titulo-ropa">
-      <span>Short Nike Trainning</span>
-    </div>
-    <div class="precio-ropa">
-      <span>$3500</span>
-   </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-    <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short3.jpg" alt=""></a>
-    <div class="titulo-ropa">
-      <span>Short Nike Fusion</span>
-    </div>
-    <div class="precio-ropa">
-      <span>$2100</span>
-   </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-     <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short3.jpg" alt=""></a>
-     <div class="titulo-ropa">
-       <span>Short Nike Fusion</span>
-     </div>
-     <div class="precio-ropa">
-       <span>$2100</span>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-     <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short2.jpg" alt=""></a>
-     <div class="titulo-ropa">
-       <span>Short Nike Trainning</span>
-     </div>
-     <div class="precio-ropa">
-       <span>$3500</span>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-  <a href="producto.php"><img class="foto zoom" src="img/Shorts/Short1.jpg" alt=""></a>
-  <div class="titulo-ropa">
-    <span>Short Nike Sport</span>
-  </div>
-  <div class="precio-ropa">
-    <span>$3000</span>
- </div>
-  </div>
+    @endforeach
+
 
   </div>
 
