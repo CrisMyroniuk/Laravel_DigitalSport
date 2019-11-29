@@ -18,7 +18,7 @@
     <div class="row">
       @foreach ($productos as $producto)
         <div class="col-xs-12 col-md-6 col-lg-4">
-             <a href="/producto/{{$producto['id']}}"><img class="foto zoom" src="{{$producto['imagen']}}" alt=""></a>
+             <a href="/producto/{{$producto['id']}}"><img class="foto zoom" src="/storage/app/public/img/{{$producto['imagen']}}" alt=""></a>
              <div class="titulo-ropa">
                <span>{{$producto['nombre']}}</span>
              </div>
