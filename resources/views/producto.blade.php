@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-7">
             <div class="img-producto">
-              <img src="{{$producto['imagen']}}" alt="">
+              <img src="/img/{{$producto['imagen']}}" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-5">
