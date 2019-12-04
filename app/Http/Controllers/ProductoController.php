@@ -32,10 +32,12 @@ class ProductoController extends Controller
     return view('buzos',compact('productos'));
   }
   public function accesorio(){
-    return view('accesorios');
+      $productos=Producto::where('categoria_id',4)->paginate(6);
+    return view('accesorios',compact('productos'));
   }
   public function zapatilla(){
-    return view('zapatillas');
+      $productos=Producto::where('categoria_id',3)->paginate(6);
+    return view('zapatillas',compact('productos'));
   }
   // public function productoSeleccionado(){
   //   return view('producto');

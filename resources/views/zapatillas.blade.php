@@ -10,64 +10,23 @@
 @section('principal')
 <div id="main">
   <h1>CALZADO</h1>
-  <div class="row">
 
-  <div class="col-xs-12 col-md-6 col-lg-4">
-  <a href="producto.php"><img class="foto zoom" src="img/Zapatillas/Zapatilla1.jpg" alt=""></a>
-  <div class="titulo-ropa">
-    <span>Zapatillas Nike Running</span>
-  </div>
-  <div class="precio-ropa">
-    <span>$5500</span>
-  </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-    <a href="producto.php"><img class="foto zoom" src="img/Zapatillas/Zapatilla2.jpg" alt=""></a>
-    <div class="titulo-ropa">
-      <span>Zapatilla UnderArmour Training</span>
-    </div>
-    <div class="precio-ropa">
-      <span>$4500</span>
-   </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-    <a href="producto.php"><img class="foto zoom" src="img/Zapatillas/Zapatilla1.jpg" alt=""></a>
-    <div class="titulo-ropa">
-      <span>Zapatillas Nike Running</span>
-    </div>
-    <div class="precio-ropa">
-      <span>$5500</span>
-   </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-     <a href="producto.php"><img class="foto zoom" src="img/Zapatillas/Zapatilla2.jpg" alt=""></a>
-     <div class="titulo-ropa">
-       <span>Zapatilla UnderArmour Training</span>
-     </div>
-     <div class="precio-ropa">
-       <span>$4500</span>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-     <a href="producto.php"><img class="foto zoom" src="img/Zapatillas/Zapatilla1.jpg" alt=""></a>
-     <div class="titulo-ropa">
-       <span>Zapatillas Nike Running</span>
-     </div>
-     <div class="precio-ropa">
-       <span>$5500</span>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-4">
-  <a href="producto.php"><img class="foto zoom" src="img/Zapatillas/Zapatilla2.jpg" alt=""></a>
-  <div class="titulo-ropa">
-    <span>Zapatilla UnderArmour Training</span>
-  </div>
-  <div class="precio-ropa">
-    <span>$4500</span>
-  </div>
-  </div>
 
-  </div>
+    <div class="row">
+      @foreach ($productos as $producto)
+        <div class="col-xs-12 col-md-6 col-lg-4">
+             <a href="/producto/{{$producto['id']}}"><img class="foto zoom" src="/img/Zapatillas/{{$producto['imagen']}}" alt=""></a>
+             <div class="titulo-ropa">
+               <span>{{$producto['nombre']}}</span>
+             </div>
+             <div class="precio-ropa">
+               <span>${{$producto['precio']}}</span>
+            </div>
+        </div>
+      @endforeach
+
+    </div>
+
 
 </div>
 @endsection
