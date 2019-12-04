@@ -26,9 +26,11 @@ Route::get('/buzos','ProductoController@buzo');
 Route::get('/accesorios','ProductoController@accesorio');
 Route::get('/zapatillas','ProductoController@zapatilla');
 // Route::get('/producto','ProductoController@productoSeleccionado');
-Route::get('/nuevoProducto','ProductoController@nuevoProducto');
-Route::post('/nuevoProducto','ProductoController@agregarProducto');
-Route::get('/nuevoProducto', 'ProductoController@newProducto');
+Route::get('/nuevoProducto','ProductoController@nuevoProducto')->middleware('is_admin');
+Route::post('/nuevoProducto','ProductoController@agregarProducto')->middleware('is_admin');
+Route::get('/nuevoProducto', 'ProductoController@newProducto')->middleware('is_admin');
 
-Route::get('/modificarProducto','ProductoController@modificarProducto');
+Route::get('/modificarProducto','ProductoController@modificarProducto') ->middleware('is_admin');
 Route::get('/contacto','ContactoController@contacto');
+
+Auth::routes();

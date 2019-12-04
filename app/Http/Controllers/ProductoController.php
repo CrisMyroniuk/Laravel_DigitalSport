@@ -24,10 +24,12 @@ class ProductoController extends Controller
 
   }
   public function musculosa(){
-    return view('musculosas');
+      $productos=Producto::where('categoria_id',5)->paginate(6);
+    return view('musculosas',compact('productos'));
   }
   public function buzo(){
-    return view('buzos');
+      $productos=Producto::where('categoria_id',2)->paginate(6);
+    return view('buzos',compact('productos'));
   }
   public function accesorio(){
     return view('accesorios');

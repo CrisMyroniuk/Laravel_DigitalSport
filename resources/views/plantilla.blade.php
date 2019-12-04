@@ -22,38 +22,46 @@
       <header>
       <input type="checkbox" id="menu">
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
-      <a class="logo" href="index.php"><h1>DIGITAL SPORT></h1></a>
+      <a class="logo" href="index.php"><h1>DIGITAL SPORT</h1></a>
 
      <nav class="menu">
        <ul>
-         <li><a href="remeras.php">Remeras</a></li>
-         <li><a href="pantalon.php">Pantalones</a></li>
-         <li><a href="zapatillas.php">Zapatillas</a></li>
-         <li><a href="buzos.php">Buzos</a></li>
-         <li><a href="musculosas.php">Musculosas</a></li>
-         <li><a href="accesorios.php">Accesorios</a></li>
+         <li><a href="remeras">Remeras</a></li>
+         <li><a href="pantalon">Pantalones</a></li>
+         <li><a href="zapatillas">Zapatillas</a></li>
+         <li><a href="buzos">Buzos</a></li>
+         <li><a href="musculosas">Musculosas</a></li>
+         <li><a href="accesorios">Accesorios</a></li>
          <hr>
-         <li><a href="contacto.php">CONTACTO</a></li>
-         <li><a href="faqs.php">FAQS</a></li>
+         <li><a href="contacto">CONTACTO</a></li>
+         <li><a href="faqs">FAQS</a></li>
 
-         <li><a href="registro.php">REGISTRO</a></li>
-         <li><a href="login.php">LOGIN</a></li>
+         <li><a href="register">REGISTRO</a></li>
+         <li><a href="login">LOGIN</a></li>
 
 
-         <li><a href="perfil.php">MI PERFIL</a></li>
-         <li><a href="logout.php">CERRAR SESIÓN</a></li>
+         <li><a href="perfil">MI PERFIL</a></li>
+         <li><a href="logout">CERRAR SESIÓN</a></li>
 
 
        </ul>
 
      </nav>
 
-       <button type="button" name="button"> <a href="login.php"> <img src="img/logearse.svg" alt=""> </a> </button>
+       <button type="button" name="button"> <a href="login"> <img src="img/logearse.svg" alt=""> </a> </button>
 
-      <button type="button" name="button"> <a href="perfil.php"> <img src="img/login.svg" alt=""></a> </button>
-      <button type="button" name="button"> <a href="miscompras.php"> <img src="img/carrito.svg" alt=""> </a> </button>
+      <button type="button" name="button"> <a href="perfil"> <img src="img/login.svg" alt=""></a> </button>
+      <button type="button" name="button"> <a href="miscompras"> <img src="img/carrito.svg" alt=""> </a> </button>
+
+  @if(Auth::user() && Auth::user()->admin)
       <a href="/nuevoProducto">PRODUCTO NUEVO</a>
       <a href="/modificarProducto">MODIFICAR PRODUCTO</a>
+
+
+ @endif
+
+
+
 
 
 
@@ -76,11 +84,11 @@
       <div class="menu-footer">
             <ul>
 
-              <li><i class="fas fa-user-edit"></i> <a href="registro.php">REGISTRO</a></li>
-              <li><i class="fas fa-user"></i> <a href="login.php">LOGIN</a></li>
+              <li><i class="fas fa-user-edit"></i> <a href="register">REGISTRO</a></li>
+              <li><i class="fas fa-user"></i> <a href="login">LOGIN</a></li>
 
-              <li><i class="fas fa-user-edit"></i> <a href="perfil.php">MI PERFIL</a></li>
-              <li><i class="fas fa-user"></i> <a href="logout.php">CERRAR SESION</a></li>
+              <li><i class="fas fa-user-edit"></i> <a href="perfil">MI PERFIL</a></li>
+              <li><i class="fas fa-user"></i> <a href="logout">CERRAR SESION</a></li>
 
               <!--<li><i class="far fa-question-circle"></i> <a href="faqs.php">PREGUNTAS FRECUENTES</a></li>-->
               <li><i class="far fa-envelope"></i> <a href="/contacto">CONTACTO</a></li>
