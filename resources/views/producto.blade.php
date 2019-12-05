@@ -16,6 +16,7 @@
         <div class="col-sm-12 col-md-12 col-lg-7">
           <div class="img-producto">
             <img src="/img/{{$producto['imagen']}}" alt="">
+            
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5">
@@ -42,7 +43,7 @@
             </form>
 
             <div class="carrito">
-              <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block">AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
+              <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block" @if($producto->cantidadStock == 0) disabled @endif>AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
             </div>
 
           {{-- @endforeach --}}

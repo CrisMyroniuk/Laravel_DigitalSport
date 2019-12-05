@@ -22,7 +22,7 @@
       <header>
       <input type="checkbox" id="menu">
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
-      <a class="logo" href="index.php"><h1>DIGITAL SPORT</h1></a>
+      <a class="logo" href="index.php"><h1>DIGITAL SPORT ></h1></a>
 
      <nav class="menu">
        <ul>
@@ -47,7 +47,7 @@
 
           <li><a href="/nuevoProducto">NUEVO PRODUCTO</a></li>
           <li><a href="/modificarProducto">MODIFICAR PRODUCTO</a></li>
-          
+
 
        @endif
 
@@ -91,7 +91,7 @@
               <li><i class="fas fa-user"></i> <a href="login">LOGIN</a></li>
               @endif
               @if(Auth::user())
-              <li><i class="fas fa-user-edit"></i> <a href="/perfil">MI PERFIL</a></li>
+              <li><ion-icon style="color:white;font-size:25px" name="person"></ion-icon> <a href="/perfil">MI PERFIL</a></li>
               <li><i class="fas fa-user"></i> <a href="">CERRAR SESION</a></li>
               @endif
               <li><i class="far fa-question-circle"></i> <a href="faqs.php">PREGUNTAS FRECUENTES</a></li>

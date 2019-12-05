@@ -10,7 +10,7 @@
 @section('principal')
   <div id="container">
 
-    <h1>Bienvenido {{Auth::user()->name}}</h1>
+    <h1>Bienvenido/a {{Auth::user()->name}}</h1>
     <div class="row">
     <div id="nav" class="col-xs-12 col-md-2 col-lg-2">
         <div>
@@ -30,7 +30,10 @@
     <div id="main" class="col-xs-12 col-md-9 col-lg-9">
            <div id="datosper">
               <h3>Datos personales</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><h5 style="display:inline">Nombre: </h5>{{Auth::user()->name}}</p>
+              <p><h5 style="display:inline">Apellido: </h5>{{Auth::user()->apellido}}</p>
+              <p><h5 style="display:inline">Email: </h5>{{Auth::user()->email}}</p>
+              
            </div>
            <div id="direcciones">
              <h3>Direcciones</h3>
