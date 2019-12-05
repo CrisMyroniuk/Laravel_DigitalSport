@@ -76,7 +76,7 @@ class ProductoController extends Controller
     }
     $productoNuevo = new Producto();
     $productoNuevo->nombre=$req['nombre'];
-  $productoNuevo->descripcion=$req['descripcion'];
+    $productoNuevo->descripcion=$req['descripcion'];
     $productoNuevo->precio=$req['precio'];
     $productoNuevo->cantidadStock=$req['cantidadStock'];
     $productoNuevo->marca_id=$req['marca_id'];
@@ -85,7 +85,7 @@ class ProductoController extends Controller
     $productoNuevo->imagen = $imagen;
     $productoNuevo->save();
 
-    return redirect('/');
+    //return redirect('/');
   }
 
 }

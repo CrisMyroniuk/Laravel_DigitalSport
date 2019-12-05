@@ -16,10 +16,10 @@
       <div class="titulo">
         <h1>Producto Nuevo</h1>
       </div>
-      <form class="" action="/nuevoProducto" method="post">
+      <form class="formNewProducto" action="/nuevoProducto" method="post">
         {{csrf_field()}}
         <div class="form-group">
-          <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto">
+          <input value="" type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto">
         </div>
         <div class="form-group">
           <textarea class="form-control" id="exampleFormControlTextarea1" name="descripcion" rows="3" placeholder="Descripcion"></textarea>
@@ -53,14 +53,14 @@
           </div>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-lg">Cargar Producto</button>
+          <button id="nuevoProducto" type="submit" class="btn btn-primary btn-lg">Cargar Producto</button>
         </div>
       </form>
 
 
     </div>
   </div>
-
+  <script src="/js/newProducto.js" type="text/javascript"></script>
 
 
 

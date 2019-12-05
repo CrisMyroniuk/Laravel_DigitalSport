@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
 
-
+    <link rel="stylesheet" href="/fontawesome-free-5.10.1-web/css/all.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,46 @@
       <header>
       <input type="checkbox" id="menu">
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
-      <a class="logo" href="index.php"><h1>DIGITAL SPORT ></h1></a>
+      <a class="logo" href="/"><h1>DIGITAL SPORT ></h1></a>
+
+@if(Auth::user())
+      <div class="dropdown" style="display:inline">
+  <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 style="display:inline">{{Auth::user()->name}}</h5>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/perfil">Mi Perfil</a>
+    <a class="dropdown-item" href="/carrito">Mi Carrito</a>
+    <a class="dropdown-item" href="#">Cerrar Sesion</a>
+  </div>
+</div>
+@endif
+@if(Auth::user()&&Auth::user()->admin)
+      <div class="dropdown" style="display:inline">
+  <button style="background-color:rgb(0, 123, 255);width:55px;border-radius:1em;height:40px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-cogs"></i>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/nuevoProducto">Nuevo Producto</a>
+    <a class="dropdown-item" href="/modificarProducto">Modificar Producto</a>
+    <a class="dropdown-item" href="#"></a>
+  </div>
+</div>
+@endif
+@if(Auth::user()==false)
+      <div class="dropdown" style="display:inline">
+  <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 style="display:inline">Invitado</h5>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/login">Login</a>
+    <a class="dropdown-item" href="/register">Registrar</a>
+
+  </div>
+</div>
+@endif
+
+
 
      <nav class="menu">
        <ul>
@@ -55,11 +94,12 @@
 
      </nav>
 
-       <button type="button" name="button"> <a href="login"> <img src="img/logearse.svg" alt=""> </a> </button>
+
+       {{-- <button type="button" name="button"> <a href="login"> <img src="img/logearse.svg" alt=""> </a> </button>
   @if(Auth::user())
       <button type="button" name="button"> <a href="/perfil"> <img src="img/login.svg" alt=""></a> </button>
-      <button type="button" name="button"> <a href="miscompras"> <img src="img/carrito.svg" alt=""> </a> </button>
-  @endif
+      <button type="button" name="button"> <a href="miscompras"> <i class="fas fa-shopping-cart"></i> </a> </button>
+  @endif --}}
 
 
 
@@ -91,7 +131,7 @@
               <li><i class="fas fa-user"></i> <a href="login">LOGIN</a></li>
               @endif
               @if(Auth::user())
-              <li><ion-icon style="color:white;font-size:25px" name="person"></ion-icon> <a href="/perfil">MI PERFIL</a></li>
+              <li><i class="fas fa-user-edit"></i> <a href="/perfil">MI PERFIL</a></li>
               <li><i class="fas fa-user"></i> <a href="">CERRAR SESION</a></li>
               @endif
               <li><i class="far fa-question-circle"></i> <a href="faqs.php">PREGUNTAS FRECUENTES</a></li>
