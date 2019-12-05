@@ -36,7 +36,14 @@
   </div>
 
     <div id="main">
-      <h1>PRODUCTOS</h1>
+      <h1 style="display:inline">PRODUCTOS</h1>
+      @if(Auth::user() && Auth::user()->admin)
+
+          <a href="/nuevoProducto"><ion-icon style='font-size:35px' name="add-circle"></ion-icon></a>
+          <a href="/modificarProducto"><ion-icon style='font-size:35px' name="settings"></ion-icon></a>
+
+
+     @endif
       <div class="row">
 
         <div class="col-xs-12 col-md-6 col-lg-4">

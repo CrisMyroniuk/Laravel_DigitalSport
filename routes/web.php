@@ -32,5 +32,7 @@ Route::get('/nuevoProducto', 'ProductoController@newProducto')->middleware('is_a
 
 Route::get('/modificarProducto','ProductoController@modificarProducto') ->middleware('is_admin');
 Route::get('/contacto','ContactoController@contacto');
+Route::get('/perfil','HomeController@perfil');
+
 
 Auth::routes();
