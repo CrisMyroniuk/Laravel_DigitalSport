@@ -26,7 +26,7 @@
           </select>
         </div>
         <div class="form-group">
-          <input value="" type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto" disabled>
+          <input value="" type="text" class="form-control" id="name" name="nombre" placeholder="Nombre Producto" disabled>
         </div>
         <div class="form-group">
           <textarea class="form-control" id="exampleFormControlTextarea1" name="descripcion" rows="3" placeholder="Descripcion" disabled></textarea>
@@ -65,7 +65,9 @@
 
     </div>
   </div>
+<script src="/js/modificarProducto.js" type="text/javascript">
 
+</script>
 
 
 
