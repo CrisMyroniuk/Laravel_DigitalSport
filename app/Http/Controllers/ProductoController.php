@@ -85,7 +85,7 @@ class ProductoController extends Controller
     $productoNuevo->imagen = $imagen;
     $productoNuevo->save();
 
-    //return redirect('/');
+    return redirect('/nuevoProducto');
   }
 
 }

@@ -61,7 +61,7 @@
     </div>
   </div>
   <script src="/js/newProducto.js" type="text/javascript"></script>
-
+  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
 
 
 @endsection
