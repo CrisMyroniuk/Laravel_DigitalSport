@@ -28,5 +28,8 @@ class HomeController extends Controller
     public function perfil(){
       return view('perfil');
     }
-    
+    public function carrito(){
+      return view('carrito');
+    }
+
 }
