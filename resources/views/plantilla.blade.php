@@ -32,7 +32,7 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/perfil">Mi Perfil</a>
     <a class="dropdown-item" href="/carrito">Mi Carrito</a>
-    <a class="dropdown-item" href="#">Cerrar Sesion</a>
+    <a class="dropdown-item" href="{{ route('logout') }}">Cerrar Sesion</a>
   </div>
 </div>
 @endif

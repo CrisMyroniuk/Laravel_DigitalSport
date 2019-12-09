@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('plantilla')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
+@section('principal')
+<div class="container" style="height:70vh">
+    <div class="row justify-content-center" style="margin-top:5%">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>

@@ -31,5 +31,6 @@ class HomeController extends Controller
     public function carrito(){
       return view('carrito');
     }
+    
 
 }

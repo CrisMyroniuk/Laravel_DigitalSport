@@ -48,7 +48,7 @@
         </div>
         <div class="form-group">
           <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+            <input name='imagen' type="file" class="custom-file-input" id="customFileLang" lang="es">
             <label class="custom-file-label" for="customFileLang">Seleccionar Imagen</label>
           </div>
         </div>
