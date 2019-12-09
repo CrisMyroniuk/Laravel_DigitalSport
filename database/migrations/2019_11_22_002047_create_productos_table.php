@@ -20,7 +20,7 @@ class CreateProductosTable extends Migration
             $table->text('descripcion');
             $table->float('precio');
             $table->integer('cantidadStock');
-            $table->string('imagen',300);
+            $table->string('imagen');
             $table->unsignedBigInteger('marca_id');
             $table->unsignedBigInteger('categoria_id');
             $table->foreign('marca_id')->references('id')->on('marcas');
