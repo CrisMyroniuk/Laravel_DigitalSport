@@ -18,7 +18,7 @@
     <div class="row">
       @foreach ($productos as $producto)
         <div class="col-xs-12 col-md-6 col-lg-4">
-             <a @if($producto->cantidadStock > 0) href="/producto/{{$producto['id']}}" @endif><img class="foto zoom"  src="/img/Remeras/{{$producto['imagen']}}" alt=""></a>
+             <a @if($producto->cantidadStock > 0) href="/producto/{{$producto['id']}}" @endif><img class="foto zoom"  src="/img/{{$producto['imagen']}}" alt=""></a>
              @if ($producto->cantidadStock == 0)
                <div class="indicador">
                  <h3>SIN STOCK</h3>

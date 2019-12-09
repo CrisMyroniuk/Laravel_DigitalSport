@@ -71,7 +71,7 @@ class ProductoController extends Controller
     $imagen = '';
     //si mandé una imagen la guardo
     if ($req->file('imagen')) {
-        $imagen = $req->file('imagen')->store('public');
+        $imagen = $req->file('imagen')->store('public/img');
         $imagen = basename($imagen);
     }
     $productoNuevo = new Producto();
