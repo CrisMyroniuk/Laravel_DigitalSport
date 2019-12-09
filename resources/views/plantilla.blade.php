@@ -148,7 +148,7 @@
                  CERRAR SESIÓN
               </a></li>
               @endif
-              <li><i class="far fa-question-circle"></i> <a href="faqs.php">PREGUNTAS FRECUENTES</a></li>
+              <li><i class="far fa-question-circle"></i> <a href="faqs">PREGUNTAS FRECUENTES</a></li>
               <li><i class="far fa-envelope"></i> <a href="/contacto">CONTACTO</a></li>
 
             </ul>
