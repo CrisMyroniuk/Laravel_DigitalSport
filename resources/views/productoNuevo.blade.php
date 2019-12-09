@@ -16,7 +16,7 @@
       <div class="titulo">
         <h1>Producto Nuevo</h1>
       </div>
-      <form class="formNewProducto" action="/nuevoProducto" method="post">
+      <form class="formNewProducto" action="/nuevoProducto" enctype="multipart/form-data" method="post">
         {{csrf_field()}}
         <div class="form-group">
           <input value="" type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre Producto">
@@ -61,7 +61,7 @@
     </div>
   </div>
   <script src="/js/newProducto.js" type="text/javascript"></script>
-  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
 
 
 @endsection
