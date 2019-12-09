@@ -32,9 +32,10 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/perfil">Mi Perfil</a>
     <a class="dropdown-item" href="/carrito">Mi Carrito</a>
-    <a class="dropdown-item" href="#">Cerrar Sesion</a>
-
-
+    <li><a class="dropdown-item" href="{{ route('logout') }}"
+       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+      Cerrar Sesion
+    </a></li>
   </div>
 </div>
 @endif
@@ -59,6 +60,7 @@
     <a class="dropdown-item" href="/login">Login</a>
     <a class="dropdown-item" href="/register">Registrar</a>
 
+
   </div>
 </div>
 @endif
@@ -82,7 +84,14 @@
          @endif
          @if(Auth::user())
          <li><a href="perfil">MI PERFIL</a></li>
-         <li><a href="logout">CERRAR SESIÓN</a></li>
+         <li><a class="dropdown-item" href="{{ route('logout') }}"
+            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          CERRAR SESION
+         </a></li>
+
+         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+             @csrf
+         </form>
         @endif
         @if(Auth::user() && Auth::user()->admin)
 
@@ -134,7 +143,10 @@
               @endif
               @if(Auth::user())
               <li><i class="fas fa-user-edit"></i> <a href="/perfil">MI PERFIL</a></li>
-              <li><i class="fas fa-user"></i> <a href="">CERRAR SESION</a></li>
+              <li><a class="dropdown-item" href="{{ route('logout') }}"
+                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                 CERRAR SESIÓN
+              </a></li>
               @endif
               <li><i class="far fa-question-circle"></i> <a href="faqs.php">PREGUNTAS FRECUENTES</a></li>
               <li><i class="far fa-envelope"></i> <a href="/contacto">CONTACTO</a></li>
