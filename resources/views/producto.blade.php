@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-7">
           <div class="img-producto">
-            <img src="/img/{{$producto['imagen']}}" alt="">
+            <img src="/storage/img/{{$producto['imagen']}}" alt="">
 
           </div>
         </div>
@@ -58,6 +58,6 @@
   </div>
 
   <script src="/js/agregarProductoCarrito.js" type="text/javascript"></script>
-  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+  <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
 
 @endsection
