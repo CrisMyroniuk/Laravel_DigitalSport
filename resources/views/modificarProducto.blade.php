@@ -16,7 +16,7 @@
       <div class="titulo">
         <h1>Modificar Producto</h1>
       </div>
-      <form class="" action="/modificarProducto" method="post">
+      <form class="formulario" action="/modificarProducto" method="post">
         <div class="form-group">
           <select class="custom-select">
             <option selected>Seleccione el producto a modificar</option>
@@ -26,38 +26,38 @@
           </select>
         </div>
         <div class="form-group">
-          <input value="" type="text" class="form-control" id="name" name="nombre" placeholder="Nombre Producto" disabled>
+          <input value="" type="text" class="form-control" id="name" name="nombre" placeholder="Nombre Producto">
         </div>
         <div class="form-group">
-          <textarea class="form-control" id="exampleFormControlTextarea1" name="descripcion" rows="3" placeholder="Descripcion" disabled></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="descripcion" rows="3" placeholder="Descripcion"></textarea>
         </div>
         <div class="form-group">
-          <input type="number" class="form-control" id="exampleFormControlInput1" name="precio" placeholder="Precio" disabled>
+          <input type="number" class="form-control" id="exampleFormControlInput1" name="precio" placeholder="Precio">
         </div>
         <div class="form-group">
-          <input type="number" class="form-control" id="exampleFormControlInput1" name="stock" placeholder="Cantidad en Stock" disabled>
+          <input type="number" class="form-control" id="exampleFormControlInput1" name="stock" placeholder="Cantidad en Stock">
         </div>
         <div class="form-group">
 
-          <select class="custom-select" disabled>
+          <select class="custom-select">
             <option selected>Seleccione una Marca</option>
             <option value=""></option>
           </select>
         </div>
         <div class="form-group" >
-          <select class="custom-select" disabled>
+          <select class="custom-select">
             <option selected>Seleccione una Categoria</option>
             <option value=""></option>
           </select>
         </div>
         <div class="form-group">
           <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFileLang" lang="es" disabled>
+            <input type="file" class="custom-file-input" id="customFileLang" lang="es" >
             <label class="custom-file-label" for="customFileLang" >Seleccionar Imagen</label>
           </div>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-lg " disabled>Modificar Producto</button>
+          <button type="submit" class="btn btn-primary btn-lg ">Modificar Producto</button>
         </div>
 
       </form>
