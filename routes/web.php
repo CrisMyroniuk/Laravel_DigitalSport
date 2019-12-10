@@ -34,7 +34,9 @@ Route::get('/modificarProducto','ProductoController@modificarProducto') ->middle
 Route::get('/contacto','ContactoController@contacto');
 Route::get('/perfil','HomeController@perfil');
 Route::get('/carrito','HomeController@carrito');
-
+Route::get('/faqs',function(){
+  return view('faqs');
+});
 
 
 Auth::routes();
