@@ -1,0 +1,7 @@
+div.container{
+  position: relative;
+}
+
+#resultado{
+  position: absolute;
+}
