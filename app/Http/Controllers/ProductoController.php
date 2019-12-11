@@ -93,7 +93,7 @@ class ProductoController extends Controller
        $product = Producto::find( $id );
        //elimino el producto
        $product->delete();
-       return redirect('/');
+       return redirect('/remeras');
 
   }
 

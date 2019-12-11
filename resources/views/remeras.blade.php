@@ -24,11 +24,12 @@
                  <h3>SIN STOCK</h3>
                </div>
              @endif
-             <div class="deleteProducto">
-            <a id="delete" href="#"><i class="fas fa-trash-alt" style="font-size:20px;"></i> </a>
+             @if (Auth::user()&&Auth::user()->admin)
+              <div class="deleteProducto">
+                <a class="delete" href="/eliminar/{{$producto['id']}}" ><i class="fas fa-trash-alt" style="font-size:20px;"></i> </a>
+              </div>
+             @endif
 
-
-             </div>
 
 
 
@@ -52,6 +53,6 @@
 
 
 </div>
-<script src="/js/eliminarProducto.js" type="text/javascript"></script>
 <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
+<script src="/js/eliminarProducto.js" type="text/javascript"></script>
 @endsection

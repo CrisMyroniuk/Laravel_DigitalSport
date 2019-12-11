@@ -38,6 +38,8 @@ Route::get('/faqs',function(){
   return view('faqs');
 });
 Route::get('/buscador','BuscadorController@buscar')->name('buscador');
+Route::get('/eliminar/{id}','ProductoController@eliminarProducto');
+Route::post('/eliminar/{id}','ProductoController@eliminarProducto');
 
 
 Auth::routes();
