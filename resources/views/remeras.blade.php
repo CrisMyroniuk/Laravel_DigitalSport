@@ -24,6 +24,13 @@
                  <h3>SIN STOCK</h3>
                </div>
              @endif
+             <div class="deleteProducto">
+            <a id="delete" href="#"><i class="fas fa-trash-alt" style="font-size:20px;"></i> </a>
+
+
+             </div>
+
+
 
              {{-- storage/app/public --}}
              <div class="titulo-ropa">
@@ -45,5 +52,6 @@
 
 
 </div>
-
+<script src="/js/eliminarProducto.js" type="text/javascript"></script>
+<script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
 @endsection
