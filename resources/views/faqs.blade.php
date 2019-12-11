@@ -22,7 +22,7 @@
     </ul>
   </div>
   <div class="col-sm-12 col-md-8 col-lg-7">
-    <h2>COMPRA</h2>
+    
     <h4>CÓMO COMPRAR?</h4>
     <p>Para comenzar recomendamos que te registres ingresando al icono que se encuentra arriba a la derecha en la Home.Mira nuestro catálogo de productos, elegí lo que más te guste teniendo en cuenta las características (talle y color), cantidad y agrégalos al carrito de compra.Una vez que hayas elegido todos los productos deberás proceder al pago de los mismos. Finalmente quedará completar los datos que te vamos solicitando y seleccionar método de pago.</p>
     <h4>CUÁL ES MI TALLE?</h4>

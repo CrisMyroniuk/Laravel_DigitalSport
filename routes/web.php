@@ -37,6 +37,7 @@ Route::get('/carrito','HomeController@carrito');
 Route::get('/faqs',function(){
   return view('faqs');
 });
+Route::get('/buscador','BuscadorController@buscar')->name('buscador');
 
 
 Auth::routes();
