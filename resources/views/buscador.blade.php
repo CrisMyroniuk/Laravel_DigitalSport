@@ -8,6 +8,7 @@
     <title></title>
   </head>
   <body>
+
      <div class="container">
       <div class="col-8">
         <div class="input-group mb-3">
@@ -18,9 +19,9 @@
     </div>
     @foreach ($products as $producto)
     <div class="col-xs-12 col-md-6 col-lg-4">
-   <p>
-       <a id="resultado" href="/producto/{{$producto->id}}"></a>
-    </p> 
+   <p id="resultado">
+    puto te amo 
+    </p>
 
 
 
