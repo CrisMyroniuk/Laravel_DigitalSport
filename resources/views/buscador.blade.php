@@ -19,10 +19,18 @@
     </div>
     @foreach ($products as $producto)
     <div class="col-xs-12 col-md-6 col-lg-4">
+<<<<<<< HEAD
    <p id="resultado">
     puto te amo 
     </p>
+=======
+   {{-- <p>
+       <a id="resultado" href="/producto/{{$producto->id}}"></a>
+    </p>  --}}
+<div id="resultado">
+>>>>>>> 660ba5659c8179da303ace73db19644178971108
 
+</div>
 
 
     @endforeach
