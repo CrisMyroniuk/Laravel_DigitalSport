@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
     capturar.addEventListener("keyup",function(){
 
 
-        fetch('http://localhost:8000/api/buscar?producto=' + capturar.value)
+    fetch('http://localhost:8000/api/buscar?producto=' + capturar.value)
           .then(function(resp){
             return resp.json();
           })
@@ -12,16 +12,15 @@ window.addEventListener("load", function(){
           var capturo2 = document.getElementById("resultado");
           capturo2.innerHTML = ''
             console.log(datos);
+
             datos.forEach(function (producto){
-              var li = document.createElement('li')
-              li.innerHTML = producto.nombre
-              
-              capturo2.append(li)
-          });
+              var li = document.createElement('p')
+          li.innerHTML = producto.nombre
+              capturo2.append(li);
+
+                });
 
           });
-
-
 
 
 });
