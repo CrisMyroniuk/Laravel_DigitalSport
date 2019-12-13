@@ -18,10 +18,12 @@
     </div>
     @foreach ($products as $producto)
     <div class="col-xs-12 col-md-6 col-lg-4">
-   <p>
+   {{-- <p>
        <a id="resultado" href="/producto/{{$producto->id}}"></a>
-    </p> 
+    </p>  --}}
+<div id="resultado">
 
+</div>
 
 
     @endforeach

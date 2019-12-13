@@ -14,9 +14,13 @@ window.addEventListener("load", function(){
             console.log(datos);
 
             datos.forEach(function (producto){
-              var li = document.createElement('p')
-          li.innerHTML = producto.nombre
-              capturo2.append(li);
+              var p = document.createElement('p')
+              var a=document.createElement('a')
+              // p.innerHTML = producto.nombre
+              a.innerHTML=producto.nombre
+              a.setAttribute('href','#');
+              p.append(a)
+              capturo2.append(p);
 
                 });
 
