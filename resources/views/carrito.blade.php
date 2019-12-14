@@ -8,6 +8,27 @@
   <title>DIGITAL SPORT</title>
 @endsection
 @section('principal')
+  <div class="lista-productos">
+    <div style="border:2px solid black;display:inline" class="">
+      <p style="display:inline-block">ID</p>
+      <p style="display:inline-block">Producto</p>
+      <p style="display:inline-block">Cantidad</p>
+      <p style="display:inline-block">Total</p>
+    </div>
+    @foreach ($productosCarritos as $producto)
+
+      <div class="">
+        <p style="display:inline-block">{{$producto['id']}}</p>
+        <p style="display:inline-block">{{$producto['nombre']}}</p>
+        <p style="display:inline-block">{{$producto['cantidad']}}</p>
+        <p style="display:inline-block">{{$producto['total']}}</p>
+      </div>
+
+
+    @endforeach
+
+    </div>
+  </div>
 
 
 

@@ -21,10 +21,18 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5">
           {{-- @foreach ($productos as $producto) --}}
+
             <h1>{{$producto['nombre']}}</h1>
             <h3>${{$producto['precio']}}</h3>
             <p class="descripcion">{{$producto['descripcion']}}</p>
-            <form class="" action="producto.php" method="post">
+            <form class="" action="/agregarProductoCarrito" method="post">
+              {{csrf_field()}}
+                <input style="display:none" type="" name="producto_id" value="{{$producto['id']}}">
+                <input style="display:none" type="" name="user_id" value="{{Auth::user()->id}}">
+                <input style="display:none" type="" name="nombre" value="{{$producto['nombre']}}">
+                <input style="display:none" type="" name="total" value="{{$producto['precio']}}">
+
+
               <p class="cantidad">
                 <label for="cantidad">Cantidad</label>
                 <input class="cantidad" type="number" name="cantidad" value="" min="1" max="9">
@@ -40,7 +48,7 @@
                 </select>
               </p>
 
-            </form>
+
             @if (Auth::user() == true)
 
 
@@ -54,6 +62,8 @@
 
             </div>
             @endif
+          </form>
+
 
         </div>
       </div>

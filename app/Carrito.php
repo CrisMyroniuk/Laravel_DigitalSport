@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Carrito extends Model
 {
-    //
+  public $table = 'carritos';
+  public $primaryKey = 'id';
+  protected $guarded=[];
 }

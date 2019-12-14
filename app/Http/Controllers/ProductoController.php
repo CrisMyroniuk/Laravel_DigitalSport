@@ -7,6 +7,7 @@ use App\Producto;
 use App\Categoria;
 use App\Marca;
 
+
 class ProductoController extends Controller
 {
   public function remera(){
@@ -39,6 +40,7 @@ class ProductoController extends Controller
       $productos=Producto::where('categoria_id',3)->paginate(6);
     return view('zapatillas',compact('productos'));
   }
+
   // public function productoSeleccionado(){
   //   return view('producto');
   // }
@@ -96,5 +98,7 @@ class ProductoController extends Controller
        return redirect('/remeras');
 
   }
+
+
 
 }
