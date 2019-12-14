@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Producto;
 use App\Carrito;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class CarritoController extends Controller
 {
@@ -24,8 +25,10 @@ class CarritoController extends Controller
   }
   public function mostrarProductosCarrito(){
 
-    $productosCarritos=Carrito::where('user_id',4)->get();
-    return view('carrito',compact('productosCarritos'));
+      $productosCarritos=Carrito::where('user_id',Auth::user()->id)->get();
+      return view('carrito',compact('productosCarritos'));
+
+
   }
 
 
