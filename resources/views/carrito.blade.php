@@ -8,24 +8,46 @@
   <title>DIGITAL SPORT</title>
 @endsection
 @section('principal')
-  <div class="lista-productos">
-    <div style="border:2px solid black;display:inline" class="">
-      <p style="display:inline-block">ID</p>
-      <p style="display:inline-block">Producto</p>
-      <p style="display:inline-block">Cantidad</p>
-      <p style="display:inline-block">Total</p>
-    </div>
-    @foreach ($productosCarritos as $producto)
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Producto</th>
+      <th scope="col">Talle</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    @php
+      $incrementador=1;
+      $total=0;
+    @endphp
+      @foreach ($productosCarritos as $producto)
+    <tr>
+      {{-- <th scope="row">1</th> --}}
 
-      <div class="">
-        <p style="display:inline-block">{{$producto['id']}}</p>
-        <p style="display:inline-block">{{$producto['nombre']}}</p>
-        <p style="display:inline-block">{{$producto['cantidad']}}</p>
-        <p style="display:inline-block">{{$producto['total']}}</p>
-      </div>
+
+        <th scope="row">{{$incrementador}}</th>
+        <td>{{$producto['nombre']}}</td>
+        <td>Talle</td>
+        <td>{{$producto['cantidad']}}</td>
+        <td>{{$producto['total']*$producto['cantidad']}}</td>
+        @php
+  $incrementador++;
+  $total+=($producto['total']*$producto['cantidad']);
+        @endphp
 
 
+
+    </tr>
     @endforeach
+  </tbody>
+</table>
+  <input type="text" name="total-Pedido" value="${{$total}}"> 
+
+
+
 
     </div>
   </div>
