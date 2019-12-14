@@ -41,12 +41,19 @@
               </p>
 
             </form>
+            @if (Auth::user() == true)
 
-            <div class="carrito">
+
+              <div class="carrito">
               <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block" @if($producto->cantidadStock == 0) disabled @endif>AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
-            </div>
 
-          {{-- @endforeach --}}
+            </div>
+            @else
+              <div class="carrito">
+              <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block" disabled >AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
+
+            </div>
+            @endif
 
         </div>
       </div>
