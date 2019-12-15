@@ -15,13 +15,23 @@ window.addEventListener("load", function(){
 
             datos.forEach(function (producto){
 
+
               var p = document.createElement('p')
               var a=document.createElement('a')
+              var i = document.createElement('img')
               // p.innerHTML = producto.nombre
               a.innerHTML=producto.nombre
-              a.setAttribute('href','/producto/' + producto.id);
+              a.setAttribute('href','/producto/'+ producto.id);
+              
+              i.setAttribute('src','/img/'+producto.imagen);
+              i.width = 45;
+              i.height = 45;
               p.append(a)
+              p.append(i)
               capturo2.append(p);
+              a.style.color = "black";
+
+
 
 
                 });

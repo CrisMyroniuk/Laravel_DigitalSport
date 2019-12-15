@@ -17,19 +17,17 @@
         <span class="input-group-text">Buscar</span>
       </div>
     </div>
-    @foreach ($products as $producto)
-    <div class="col-xs-12 col-md-6 col-lg-4">
-
-   {{-- <p>
-       <a id="resultado" href="/producto/{{$producto->id}}"></a>
-    </p>  --}}
-<div id="resultado">
+    <div class="col-xs-12 col-md-6 col-lg-4 general">
 
 
-</div>
+   <div id="resultado">
+
+   </div>
+
+    </div>
 
 
-    @endforeach
+
   </div>
   </div>
   </div>
@@ -49,7 +47,7 @@
 
 
   {{-- @extends('plantilla')
-  @section('css')
+  {{-- @section('css')
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="/css/productos.css">

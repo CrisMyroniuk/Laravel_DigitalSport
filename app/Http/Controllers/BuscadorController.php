@@ -15,7 +15,7 @@ class BuscadorController extends Controller
  }
 
  public function filtradoJson(Request $request){
-   $products = Producto::where('nombre', 'like', '%'. $request->producto .'%')->take(7)->get();
+   $products = Producto::where('nombre', 'like', '%'. $request->producto .'%')->take(6)->get();
 
    return response()->json($products);
  }
