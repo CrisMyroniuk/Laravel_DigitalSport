@@ -21,10 +21,18 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5">
           {{-- @foreach ($productos as $producto) --}}
+
             <h1>{{$producto['nombre']}}</h1>
             <h3>${{$producto['precio']}}</h3>
             <p class="descripcion">{{$producto['descripcion']}}</p>
-            <form class="" action="producto.php" method="post">
+            <form class="" action="/agregarProductoCarrito" method="post">
+              {{csrf_field()}}
+                <input style="display:none" type="" name="producto_id" value="{{$producto['id']}}">
+                <input style="display:none" type="" name="user_id" value="{{Auth::user()->id}}">
+                <input style="display:none" type="" name="nombre" value="{{$producto['nombre']}}">
+                <input style="display:none" type="" name="total" value="{{$producto['precio']}}">
+
+
               <p class="cantidad">
                 <label for="cantidad">Cantidad</label>
                 <input class="cantidad" type="number" name="cantidad" value="" min="1" max="9">
@@ -40,13 +48,22 @@
                 </select>
               </p>
 
-            </form>
 
-            <div class="carrito">
+            @if (Auth::user() == true)
+
+
+              <div class="carrito">
               <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block" @if($producto->cantidadStock == 0) disabled @endif>AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
-            </div>
 
-          {{-- @endforeach --}}
+            </div>
+            @else
+              <div class="carrito">
+              <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block" disabled >AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
+
+            </div>
+            @endif
+          </form>
+
 
         </div>
       </div>
