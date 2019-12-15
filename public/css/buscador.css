@@ -1,10 +1,20 @@
-/* div.container{
-  position: relative;
+
+img{
+width: 45px;
+height: auto;
+display: block;
+border-radius: 1px;i
 
 }
 
-#resultado{
-  position: absolute;
-  top: 5px;
-  right: 0;
-} */
+p
+{
+border: 1px solid black;
+border-radius:1em;
+margin:20px;
+padding: 10px;
+width: 100%;
+}
+div#resultado{
+  width: 500px;
+}

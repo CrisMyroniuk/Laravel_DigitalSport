@@ -14,21 +14,25 @@ window.addEventListener("load", function(){
             console.log(datos);
 
             datos.forEach(function (producto){
-<<<<<<< HEAD
-              var p= document.createElement('p')
-          p.innerHTML = producto.nombre
-              capturo2.append(p);
 
 
-=======
               var p = document.createElement('p')
               var a=document.createElement('a')
+              var i = document.createElement('img')
               // p.innerHTML = producto.nombre
               a.innerHTML=producto.nombre
-              a.setAttribute('href','#');
+              a.setAttribute('href','/producto/'+ producto.id);
+              
+              i.setAttribute('src','/img/'+producto.imagen);
+              i.width = 45;
+              i.height = 45;
               p.append(a)
+              p.append(i)
               capturo2.append(p);
->>>>>>> 660ba5659c8179da303ace73db19644178971108
+              a.style.color = "black";
+
+
+
 
                 });
 
