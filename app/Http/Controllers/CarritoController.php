@@ -30,6 +30,15 @@ class CarritoController extends Controller
 
 
   }
+  public function eliminarProducto($id){
+
+       //busco el producto por el id
+       $product = Carrito::find( $id );
+       //elimino el producto
+       $product->delete();
+       return redirect('/carrito');
+
+  }
 
 
 
