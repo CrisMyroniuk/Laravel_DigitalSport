@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/fontawesome-free-5.10.1-web/css/all.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <script src='js/main.js'></script>
+    {{-- <link rel="stylesheet" href="/css/buscador.css"> --}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
@@ -23,6 +25,28 @@
       <input type="checkbox" id="menu">
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
       <a class="logo" href="/"><h1>DIGITAL SPORT ></h1></a>
+      {{-- <div style="width: 564px;
+    display: inline-flex;" class="container">
+       <div class="col-8">
+         <div class="input-group mb-3">
+       <input type="text" class="form-control" id="buscar" placeholder="Busca un producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       <div class="input-group-append">
+         <span class="input-group-text">Buscar</span>
+       </div>
+     </div>
+     <div class="col-xs-12 col-md-6 col-lg-4 general">
+
+
+    <div id="resultado">
+
+    </div>
+
+     </div>
+
+
+
+   </div>
+   </div> --}}
 
 @if(Auth::user())
       <div class="dropdown" style="display:inline">
@@ -70,7 +94,7 @@
      <nav class="menu">
        <ul>
          <li><a href="remeras">Remeras</a></li>
-         <li><a href="pantalon">Pantalones</a></li>
+         <li><a href="pantalones">Pantalones</a></li>
          <li><a href="zapatillas">Zapatillas</a></li>
          <li><a href="buzos">Buzos</a></li>
          <li><a href="musculosas">Musculosas</a></li>
