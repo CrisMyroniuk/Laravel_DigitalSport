@@ -11,7 +11,7 @@
 
 
   <div class="formulario">
-    <form class="" action="index.html" method="post">
+    <form class="" action="">
       <p>
         <label for="motivo">Motivo</label>
         <select class="motivo" name="motivo">

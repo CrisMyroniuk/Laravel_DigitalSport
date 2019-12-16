@@ -76,7 +76,14 @@
     </div>
 
   </div>
+  @if (Auth::user()==false)
+    <script type="text/javascript">
+      var cap = document.getElementById('carrito'):
+      cap.onclick = function(){
 
+      };
+    </script>
+  @endif
   <script src="/js/agregarProductoCarrito.js" type="text/javascript"></script>
   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
 

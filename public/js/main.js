@@ -1,6 +1,9 @@
 window.addEventListener("load", function(){
+
+
   var capturar = document.getElementById("buscar");
     capturar.addEventListener("keyup",function(){
+
 
 
     fetch('http://localhost:8000/api/buscar?producto=' + capturar.value)
@@ -22,7 +25,7 @@ window.addEventListener("load", function(){
               // p.innerHTML = producto.nombre
               a.innerHTML=producto.nombre
               a.setAttribute('href','/producto/'+ producto.id);
-              
+
               i.setAttribute('src','/img/'+producto.imagen);
               i.width = 45;
               i.height = 45;
@@ -40,4 +43,5 @@ window.addEventListener("load", function(){
 
 
 });
+
 });
