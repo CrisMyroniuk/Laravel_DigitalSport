@@ -30,6 +30,7 @@ Route::get('/zapatillas','ProductoController@zapatilla');
 Route::get('/nuevoProducto','ProductoController@nuevoProducto')->middleware('is_admin');
 Route::post('/nuevoProducto','ProductoController@agregarProducto')->middleware('is_admin');
 Route::get('/agregarProductoCarrito','CarritoController@agregarProductoCarrito');
+Route::get('/contadorProductosCarrito','CarritoController@contadorProductosCarrito');
 Route::post('/agregarProductoCarrito','CarritoController@agregarProductoCarrito');
 Route::get('/nuevoProducto', 'ProductoController@newProducto')->middleware('is_admin');
 

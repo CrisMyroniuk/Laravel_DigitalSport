@@ -39,6 +39,10 @@ class CarritoController extends Controller
        return redirect('/carrito');
 
   }
+  public function contadorProductosCarrito(){
+    $cantidadProductos=Carrito::where('user_id',Auth::user()->id)->count();
+    return view('contarProductosCarrito',compact('cantidadProductos'));
+  }
 
 
 
