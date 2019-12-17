@@ -47,7 +47,7 @@
       <div class="row">
 
         <div class="col-xs-12 col-md-6 col-lg-4">
-        <a href="/remeras"><img class="foto zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
+        <a href="/remeras"><img class="foto zoom" src="img/imgInicio/Remeras.JPG" alt=""></a>
         <a href="/remeras">
           <div class="indicador">
             <h3>Remeras</h3>
