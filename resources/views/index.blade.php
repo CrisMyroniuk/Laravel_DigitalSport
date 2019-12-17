@@ -78,7 +78,7 @@
         </div>-->
         <div class="col-xs-12 col-md-6 col-lg-4">
 
-           <a href="/musculosas"><img class="foto zoom" src="img/imgInicio/Musculosa.jpg" alt=""></a>
+           <a href="/musculosas"><img class="foto zoom" src="img/imgInicio/Musculosa.JPG" alt=""></a>
            <a href="/musculosas">
              <div class="indicador">
                <h3>Musculosas</h3>
