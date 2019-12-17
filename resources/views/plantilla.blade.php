@@ -25,8 +25,9 @@
       <input type="checkbox" id="menu">
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
       <a class="logo" href="/"><h1>DIGITAL SPORT ></h1></a>
+      {{-- @if(Auth::user()) --}}
       <div style="width:100%;
-    display: inline-flex; margin-right:30px;" class="container">
+    display: inline-flex ; margin-top :0px;" class="container">
        <div class="">
          <div class="input-group mb-3">
        <input type="text" class="form-control" id="buscar" placeholder="Busca un producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -47,6 +48,7 @@
 
    </div>
    </div>
+ {{-- @endif --}}
 
 @if(Auth::user())
       <div class="dropdown" style="display:inline">
@@ -55,7 +57,7 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/perfil">Mi Perfil</a>
-    <a class="dropdown-item" href="/carrito">Mi Carrito <a href=""></a> </a> 
+    <a class="dropdown-item" href="/carrito">Mi Carrito <a href=""></a> </a>
     <li><a class="dropdown-item" href="{{ route('logout') }}"
        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
       Cerrar Sesion
