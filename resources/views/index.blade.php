@@ -47,7 +47,7 @@
       <div class="row">
 
         <div class="col-xs-12 col-md-6 col-lg-4">
-        <a href="/remeras"><img class="foto zoom" src="img/imgInicio/Remeras.jpg" alt=""></a>
+        <a href="/remeras"><img class="foto zoom" src="img/imgInicio/Remeras.JPG" alt=""></a>
         <a href="/remeras">
           <div class="indicador">
             <h3>Remeras</h3>
@@ -65,7 +65,7 @@
 
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
-           <a href="/buzos"><img class="foto zoom" src="img/imgInicio/Campera.jpg" alt=""></a>
+           <a href="/buzos"><img class="foto zoom" src="img/imgInicio/Campera.JPG" alt=""></a>
            <a href="/buzos">
              <div class="indicador">
                <h3>Buzos</h3>
@@ -97,7 +97,7 @@
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
 
-           <a href="/accesorios"><img class="foto zoom" src="img/imgInicio/Accesorios.jpg" alt=""></a>
+           <a href="/accesorios"><img class="foto zoom" src="img/imgInicio/Accesorios.JPG" alt=""></a>
            <a href="/accesorios">
              <div class="indicador">
                <h3>Accesorios</h3>
