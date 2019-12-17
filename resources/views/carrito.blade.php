@@ -9,7 +9,7 @@
   <title>DIGITAL SPORT</title>
 @endsection
 @section('principal')
-  <div style="height:70vh;" class="principal">
+  <div style="height:90vh;" class="principal">
 
 
   <table class="table">
@@ -35,7 +35,7 @@
 
         <th scope="row">{{$incrementador}}</th>
         <td>{{$producto['nombre']}}</td>
-        <td>Talle</td>
+        <td>{{$producto['talle']}}</td>
         <td>{{$producto['cantidad']}}</td>
         <td>{{$producto['total']*$producto['cantidad']}}</td>
         <td> <a href="/eliminar/{{$producto['id']}}"> <i class="fas fa-trash-alt"></i> </a></td>

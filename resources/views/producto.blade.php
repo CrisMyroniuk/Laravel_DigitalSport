@@ -36,17 +36,18 @@
                 <input style="display:none" type="" name="total" value="{{$producto['precio']}}">
 
 
-              <p class="cantidad">
+              <p class="cantidades">
                 <label for="cantidad">Cantidad</label>
                 <input class="cantidad" type="number" name="cantidad" value="" min="1" max="9">
               </p>
               <p class="borde">
                 <label for="talle">Talle</label>
 
-                <select class="talle" name="">
-                  <option value="">S</option>
-                  <option value="">M</option>
-                  <option value="">L</option>
+                <select class="talle" name="talle">
+                  <option value="">Talle</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
 
                 </select>
               </p>

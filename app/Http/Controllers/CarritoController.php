@@ -18,6 +18,7 @@ class CarritoController extends Controller
     $productoAgregado->nombre=$req['nombre'];
     $productoAgregado->total=$req['total'];
     $productoAgregado->cantidad=$req['cantidad'];
+    $productoAgregado->talle=$req['talle'];
     $productoAgregado->save();
     return redirect('/carrito');
 
@@ -41,7 +42,7 @@ class CarritoController extends Controller
   }
   public function contadorProductosCarrito(){
     $cantidadProductos=Carrito::where('user_id',Auth::user()->id)->count();
-    return view('contarProductosCarrito',compact('cantidadProductos'));
+    return view('contadorProductosCarrito',compact('cantidadProductos'));
   }
 
 
