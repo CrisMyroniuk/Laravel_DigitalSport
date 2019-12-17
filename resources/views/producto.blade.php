@@ -44,6 +44,7 @@
                 <label for="talle">Talle</label>
 
                 <select class="talle" name="talle">
+                  <option value="">Seleccione una opcion</option>
                   <option value="S">S</option>
                   <option value="M">M</option>
                   <option value="L">L</option>
