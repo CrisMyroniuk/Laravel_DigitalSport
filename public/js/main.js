@@ -4,6 +4,8 @@ window.addEventListener("load", function(){
   var capturar = document.getElementById("buscar");
     capturar.addEventListener("keyup",function(){
 
+var capturo2 = document.getElementById("resultado");
+        if(this.value.length >= 3){
 
 
     fetch('http://localhost:8000/api/buscar?producto=' + capturar.value)
@@ -13,7 +15,8 @@ window.addEventListener("load", function(){
 
           .then(function(datos){
           var capturo2 = document.getElementById("resultado");
-          capturo2.innerHTML = ''
+            capturo2.innerHTML = ''
+
             console.log(datos);
 
             datos.forEach(function (producto){
@@ -27,12 +30,18 @@ window.addEventListener("load", function(){
               a.setAttribute('href','/producto/'+ producto.id);
 
               i.setAttribute('src','/img/'+producto.imagen);
-              i.width = 45;
-              i.height = 45;
+              i.style.width = '45px';
+              i.height = '45px';
               p.append(a)
               p.append(i)
               capturo2.append(p);
               a.style.color = "black";
+              i.style.display = 'block'
+              p.style.border= '1px solid black';
+              p.style.margin = '20px';
+              p.style.padding = '10px';
+              p.style.width = '80%' ;
+              capturo2.style.width = '100%';
 
 
 
@@ -40,8 +49,10 @@ window.addEventListener("load", function(){
                 });
 
           });
-
-
+}
+else {
+  capturo2.innerHTML = ''
+}
 });
 
 });

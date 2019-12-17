@@ -25,16 +25,16 @@
       <input type="checkbox" id="menu">
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
       <a class="logo" href="/"><h1>DIGITAL SPORT ></h1></a>
-      {{-- <div style="width: 564px;
-    display: inline-flex;" class="container">
-       <div class="col-8">
+      <div style="width:100%;
+    display: inline-flex; margin-right:30px;" class="container">
+       <div class="">
          <div class="input-group mb-3">
        <input type="text" class="form-control" id="buscar" placeholder="Busca un producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
        <div class="input-group-append">
          <span class="input-group-text">Buscar</span>
        </div>
      </div>
-     <div class="col-xs-12 col-md-6 col-lg-4 general">
+     <div class="">
 
 
     <div id="resultado">
@@ -46,7 +46,7 @@
 
 
    </div>
-   </div> --}}
+   </div>
 
 @if(Auth::user())
       <div class="dropdown" style="display:inline">

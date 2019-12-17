@@ -17,7 +17,7 @@
         <span class="input-group-text">Buscar</span>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6 col-lg-4 general">
+    <div class="">
 
 
    <div id="resultado">
