@@ -26,7 +26,7 @@
       <label for="menu"><img src="/img/menu.svg" alt=""></label>
       <a class="logo" href="/"><h1>DIGITAL SPORT ></h1></a>
       {{-- @if(Auth::user()) --}}
-      <div style="width:100%;
+      <div style="width:40%;
     display: inline-flex ; margin-top :0px;" class="container">
        <div class="">
          <div class="input-group mb-3">
