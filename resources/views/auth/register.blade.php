@@ -2,7 +2,7 @@
 
 @section('principal')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style = "margin-bottom:48px; margin-top:48px;">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
