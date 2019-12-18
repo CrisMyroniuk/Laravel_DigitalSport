@@ -44,8 +44,8 @@ Route::get('/faqs',function(){
 Route::get('/buscador','BuscadorController@buscar')->name('buscador');
 Route::get('/eliminar/{id}','ProductoController@eliminarProducto');
 Route::post('/eliminar/{id}','ProductoController@eliminarProducto');
-Route::get('/eliminar/{id}','CarritoController@eliminarProducto');
-Route::post('/eliminar/{id}','CarritoController@eliminarProducto');
+Route::get('/eliminarProductoCarrito/{id}','CarritoController@eliminarProducto');
+Route::post('/eliminarProductoCarrito/{id}','CarritoController@eliminarProducto');
 
 
 Auth::routes();
