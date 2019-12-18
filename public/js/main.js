@@ -41,6 +41,9 @@ var capturo2 = document.getElementById("resultado");
               p.style.margin = '20px';
               p.style.padding = '10px';
               p.style.width = '80%' ;
+
+              
+              p.style.borderRadius='1em'
               capturo2.style.width = '100%';
 
 
