@@ -15,7 +15,17 @@
     <div class="row">
       @foreach ($productos as $producto)
         <div class="col-xs-12 col-md-6 col-lg-4">
-             <a href="/producto/{{$producto['id']}}"><img class="foto zoom" src="/storage/img/{{$producto['imagen']}}" alt=""></a>
+          <a @if($producto->cantidadStock > 0) href="/producto/{{$producto['id']}}" @endif><img class="foto zoom"  src="/storage/img/{{$producto['imagen']}}" alt=""></a>
+          @if ($producto->cantidadStock == 0)
+            <div class="indicador">
+              <h3>SIN STOCK</h3>
+            </div>
+          @endif
+          @if (Auth::user()&&Auth::user()->admin)
+           <div class="deleteProducto">
+             <a class="delete" href="/eliminar/{{$producto['id']}}" ><i class="fas fa-trash-alt" style="font-size:20px;"></i> </a>
+           </div>
+          @endif
              <div class="titulo-ropa">
                <span>{{$producto['nombre']}}</span>
              </div>
