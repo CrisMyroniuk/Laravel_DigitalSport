@@ -124,9 +124,9 @@ div.resultaditos{
   }
   button.botonUser{
     width:90px!important;
-position:relative;
-top:-113px;
-left:10px;
+    left: 220px;
+        top: 2px;
+        position: fixed;
 
 
   }
