@@ -8,7 +8,7 @@ var capturo2 = document.getElementById("resultado");
         if(this.value.length >= 3){
 
 
-    fetch('http://digitalsport.dhalumnos/api/buscar?producto=' + capturar.value)
+    fetch('http://localhost:3306/api/buscar?producto=' + capturar.value)
           .then(function(resp){
             return resp.json();
           })
