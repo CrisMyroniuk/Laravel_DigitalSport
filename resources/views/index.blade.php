@@ -112,4 +112,16 @@
 
       </div>
     </div>
+    <!-- Modal -->
+<div class="modal fade in" id="myModal" role="dialog" style="display: block; padding-right: 16px;"><div class="modal-dialog"><!-- Modal content-->
+    <div class="modal-content"><div class="modal-header"><h4 class="modal-title">Querés conocer nuestras promociones
+exclusivas ?</h4><button class="close" data-dismiss="modal" type="button">×</button></div><div class="modal-body"><input style="width:100%;" type="email" name="" value="" placeholder="Ingresa tu email">
+</div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">No gracias, soy millonario</button><button class="btn btn-default" data-dismiss="modal" type="button">Enviar</button>
+      </div></div></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+ $(function(){
+  $("#myModal").modal();
+ });
+</script>
 @endsection
