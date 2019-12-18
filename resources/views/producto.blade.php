@@ -63,6 +63,7 @@
             @else
               <div class="carrito">
               <button id="carrito" style="padding:10px!important;" type="submit" class="btn btn-primary btn-lg btn-block" disabled >AGREGAR AL CARRITO <i class="fas fa-cart-plus"></i></button>
+              <strong> <p style="">Debes <strong> <a id="iniciarSesion" href="/login">Iniciar Sesion</a> </strong> para agregar un producto al carrito. </p></strong>
 
             </div>
             @endif

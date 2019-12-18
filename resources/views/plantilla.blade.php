@@ -28,7 +28,7 @@
       {{-- @if(Auth::user()) --}}
       <div style="width:40%;
     display: inline-flex ; margin-top :0px;" class="container">
-       <div class="">
+       <div class="buscador">
          <div class="input-group mb-3">
        <input type="text" class="form-control" id="buscar" placeholder="Busca un producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
        <div class="input-group-append">
@@ -169,7 +169,7 @@
               @endif
               @if(Auth::user())
               <li><i class="fas fa-user-edit"></i> <a href="/perfil">MI PERFIL</a></li>
-              <li><a class="dropdown-item" href="{{ route('logout') }}"
+              <li><i class="fas fa-user-slash"></i><a  href="{{ route('logout') }}"
                  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                  CERRAR SESIÓN
               </a></li>
