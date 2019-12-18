@@ -35,7 +35,7 @@
          <span class="input-group-text">Buscar</span>
        </div>
      </div>
-     <div class="">
+     <div class="resultaditos">
 
 
     <div id="resultado">

@@ -102,7 +102,9 @@ header img{
 #menu:checked ~ .menu{
   margin: 0;
 }
-
+div.resultaditos{
+  background-color:white;
+}
 
 @media (max-width:760px) {
   .menu{
