@@ -16,9 +16,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/compra',function(){
-  return "HOLA";
-})
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/remeras','ProductoController@remera');
 Route::get('/carrito','CarritoController@mostrarProductosCarrito');
