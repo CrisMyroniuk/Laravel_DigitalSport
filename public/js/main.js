@@ -8,7 +8,7 @@ var capturo2 = document.getElementById("resultado");
         if(this.value.length >= 3){
 
 
-    fetch('http://localhost:8000/api/buscar?producto=' + capturar.value)
+    fetch('http://digitalsport.dhalumnos.com/api/buscar?producto=' + capturar.value)
           .then(function(resp){
             return resp.json();
           })
@@ -42,7 +42,7 @@ var capturo2 = document.getElementById("resultado");
               p.style.padding = '10px';
               p.style.width = '80%' ;
               capturo2.style.width = '100%';
-            
+
 
 
 
