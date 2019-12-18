@@ -113,6 +113,8 @@ div.resultaditos{
   }
   div.buscadorsito{
     width:100%!important;
+    display:block;
+    margin:0px;
   }
   div.buscador{
     width: 100%!important;
