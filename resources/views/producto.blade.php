@@ -32,7 +32,7 @@
                   <input style="display:none" type="" name="user_id" value="{{Auth::user()->id}}">
                 @endif
 
-                <input style="display:none" type="" name="nombre" value="{{$producto['nombre'}}">
+                <input style="display:none" type="" name="nombre" value="{{$producto['nombre']}}">
                 <input style="display:none" type="" name="total" value="{{$producto['precio']}}">
 
 

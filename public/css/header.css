@@ -102,12 +102,39 @@ header img{
 #menu:checked ~ .menu{
   margin: 0;
 }
-
+div.resultaditos{
+  background-color:white;
+}
 
 @media (max-width:760px) {
   .menu{
     width: 100%;
     margin-left: -100%;
+  }
+  div.buscadorsito{
+    width:100%!important;
+    display:block;
+    margin:0px;
+  }
+  div.buscador{
+    width: 100%!important;
+  }
+  h5.nombreUser{
+    display:none!important;
+  }
+  button.botonUser{
+    width:90px!important;
+    left: 220px;
+        top: 2px;
+        position: fixed;
+
+
+  }
+  header{
+    height: 18vh;
+  }
+  button.menuHerramienta{
+    display:none;
   }
 }
 
