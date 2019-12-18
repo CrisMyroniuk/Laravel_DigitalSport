@@ -1,6 +1,13 @@
 div.container-fluid ul{
   overflow: hidden;
 }
+a#iniciarSesion{
+
+  text-decoration:none;
+}
+div.buscador{
+  display:none;
+}
 
 header nav ul li{
   list-style: none;
