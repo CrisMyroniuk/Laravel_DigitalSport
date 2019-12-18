@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/remeras','ProductoController@remera');
 Route::get('/carrito','CarritoController@mostrarProductosCarrito');
-Route::get('/producto/','ProductoController@productoSeleccionado');
+Route::get('/producto/{id}','ProductoController@productoSeleccionado');
 Route::get('/pantalones','ProductoController@pantalon');
 Route::get('/musculosas','ProductoController@musculosa');
 Route::get('/buzos','ProductoController@buzo');
