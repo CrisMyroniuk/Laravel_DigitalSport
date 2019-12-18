@@ -109,6 +109,29 @@ header img{
     width: 100%;
     margin-left: -100%;
   }
+  div.buscadorsito{
+    width:100%!important;
+  }
+  div.buscador{
+    width: 100%!important;
+  }
+  h5.nombreUser{
+    display:none!important;
+  }
+  button.botonUser{
+    width:90px!important;
+position:relative;
+top:-113px;
+left:10px;
+
+
+  }
+  header{
+    height: 18vh;
+  }
+  button.menuHerramienta{
+    display:none;
+  }
 }
 
 .contenedor button{

@@ -32,7 +32,7 @@
     <tr>
       {{-- <th scope="row">1</th> --}}
 
-
+    
         <th scope="row">{{$incrementador}}</th>
         <td>{{$producto['nombre']}}</td>
         <td>{{$producto['talle']}}</td>
@@ -40,6 +40,7 @@
         <td>{{$producto['total']*$producto['cantidad']}}</td>
         <td> <a href="/eliminarProductoCarrito/{{$producto['id']}}"> <i class="fas fa-trash-alt"></i> </a></td>
         @php
+
 
   $incrementador++;
 

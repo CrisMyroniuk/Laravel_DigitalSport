@@ -27,7 +27,7 @@
       <a class="logo" href="/"><h1>DIGITAL SPORT ></h1></a>
       {{-- @if(Auth::user()) --}}
       <div style="width:40%;
-    display: inline-flex ; margin-top :0px;" class="container">
+    display: inline-flex ; margin-top :0px;" class="container buscadorsito">
        <div class="buscador">
          <div class="input-group mb-3">
        <input type="text" class="form-control" id="buscar" placeholder="Busca un producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -52,8 +52,8 @@
 
 @if(Auth::user())
       <div class="dropdown" style="display:inline">
-  <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 style="display:inline">{{Auth::user()->name}}</h5>
+ <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle botonUser" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 class="nombreUser" style="display:inline">{{Auth::user()->name}}</h5>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/perfil">Mi Perfil</a>
@@ -67,10 +67,10 @@
 @endif
 @if(Auth::user()&&Auth::user()->admin)
       <div class="dropdown" style="display:inline">
-  <button style="background-color:rgb(0, 123, 255);width:55px;border-radius:1em;height:40px" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button style="background-color:rgb(0, 123, 255);width:55px;border-radius:1em;height:40px" class="btn btn-secondary dropdown-toggle menuHerramienta" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <i class="fas fa-cogs"></i>
   </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/nuevoProducto">Nuevo Producto</a>
     <a class="dropdown-item" href="/modificarProducto">Modificar Producto</a>
     <a class="dropdown-item" href="#"></a>
@@ -80,7 +80,7 @@
 @if(Auth::user()==false)
       <div class="dropdown" style="display:inline">
   <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 style="display:inline">Invitado</h5>
+    <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 class="nombreUser" style="display:inline">Invitado</h5>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/login">Login</a>
