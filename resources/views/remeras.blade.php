@@ -26,7 +26,7 @@
              @endif
              @if (Auth::user()&&Auth::user()->admin)
               <div class="deleteProducto">
-                <a class="delete" href="/eliminarProductoCarrito/{{$producto['id']}}" ><i class="fas fa-trash-alt" style="font-size:20px;"></i> </a>
+                <a class="delete" href="/eliminar/{{$producto['id']}}" ><i class="fas fa-trash-alt" style="font-size:20px;"></i> </a>
               </div>
              @endif
 
