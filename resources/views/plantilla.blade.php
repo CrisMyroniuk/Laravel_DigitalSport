@@ -95,21 +95,21 @@
 
      <nav class="menu">
        <ul>
-         <li><a href="remeras">Remeras</a></li>
-         <li><a href="pantalones">Pantalones</a></li>
-         <li><a href="zapatillas">Zapatillas</a></li>
-         <li><a href="buzos">Buzos</a></li>
-         <li><a href="musculosas">Musculosas</a></li>
-         <li><a href="accesorios">Accesorios</a></li>
+         <li><a href="/remeras">Remeras</a></li>
+         <li><a href="/pantalones">Pantalones</a></li>
+         <li><a href="/zapatillas">Zapatillas</a></li>
+         <li><a href="/buzos">Buzos</a></li>
+         <li><a href="/musculosas">Musculosas</a></li>
+         <li><a href="/accesorios">Accesorios</a></li>
          <hr>
-         <li><a href="contacto">CONTACTO</a></li>
-         <li><a href="faqs">FAQS</a></li>
+         <li><a href="/contacto">CONTACTO</a></li>
+         <li><a href="/faqs">FAQS</a></li>
          @if((Auth::user())==false)
-         <li><a href="register">REGISTRO</a></li>
-         <li><a href="login">LOGIN</a></li>
+         <li><a href="/register">REGISTRO</a></li>
+         <li><a href="/login">LOGIN</a></li>
          @endif
          @if(Auth::user())
-         <li><a href="perfil">MI PERFIL</a></li>
+         <li><a href="/perfil">MI PERFIL</a></li>
          <li><a class="dropdown-item" href="{{ route('logout') }}"
             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
           CERRAR SESION
@@ -164,8 +164,8 @@
       <div class="menu-footer">
             <ul>
               @if(Auth::user()==false)
-              <li><i class="fas fa-user-edit"></i> <a href="register">REGISTRO</a></li>
-              <li><i class="fas fa-user"></i> <a href="login">LOGIN</a></li>
+              <li><i class="fas fa-user-edit"></i> <a href="/register">REGISTRO</a></li>
+              <li><i class="fas fa-user"></i> <a href="/login">LOGIN</a></li>
               @endif
               @if(Auth::user())
               <li><i class="fas fa-user-edit"></i> <a href="/perfil">MI PERFIL</a></li>
@@ -174,7 +174,7 @@
                  CERRAR SESIÓN
               </a></li>
               @endif
-              <li><i class="far fa-question-circle"></i> <a href="faqs">PREGUNTAS FRECUENTES</a></li>
+              <li><i class="far fa-question-circle"></i> <a href="/faqs">PREGUNTAS FRECUENTES</a></li>
               <li><i class="far fa-envelope"></i> <a href="/contacto">CONTACTO</a></li>
 
             </ul>
