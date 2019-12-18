@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/remeras','ProductoController@remera');
 Route::get('/carrito','CarritoController@mostrarProductosCarrito');
-Route::get('/producto/','ProductoController@productoSeleccionado');
+Route::get('/producto/{id}','ProductoController@productoSeleccionado');
 Route::get('/pantalones','ProductoController@pantalon');
 Route::get('/musculosas','ProductoController@musculosa');
 Route::get('/buzos','ProductoController@buzo');
@@ -44,8 +44,8 @@ Route::get('/faqs',function(){
 Route::get('/buscador','BuscadorController@buscar')->name('buscador');
 Route::get('/eliminar/{id}','ProductoController@eliminarProducto');
 Route::post('/eliminar/{id}','ProductoController@eliminarProducto');
-Route::get('/eliminarProductoCarrito/{id}','CarritoController@eliminarProductoCarrito');
-Route::post('/eliminarProductoCarrito/{id}','CarritoController@eliminarProductoCarrito');
+Route::get('/eliminar/{id}','CarritoController@eliminarProducto');
+Route::post('/eliminar/{id}','CarritoController@eliminarProducto');
 
 
 Auth::routes();
