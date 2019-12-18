@@ -74,7 +74,7 @@ class ProductoController extends Controller
     //si mandé una imagen la guardo
     if ($req->file('imagen')) {
         $imagen = $req->file('imagen')->store('public/img');
-        
+
         $imagen = basename($imagen);
     }
     $productoNuevo = new Producto();
@@ -99,6 +99,25 @@ class ProductoController extends Controller
        return redirect('/remeras');
 
   }
+  public function editar($id)
+   {
+     $producto = Producto::find($id);
+     return view('productoEditar', compact('producto'));
+   }
+   public function actualizar(request $req, $id){
+     $producto = Producto::find($id);
+     $producto->nombre = $req->nombre;
+     $producto->precio = $req->precio;
+     $producto->descripcion=$req['descripcion'];
+     $producto->descripcion = $req->descripcion;
+     $producto->cantidadStock = $req->cantidadStock;
+     $producto->marca_id=$req['marca_id'];
+
+     $producto->categoria_id=$req['categoria_id'];
+     $producto->imagen = $imagen;
+     $producto->save();
+     return redirect('/');
+   }
 
 
 

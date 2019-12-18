@@ -46,6 +46,8 @@ Route::get('/eliminar/{id}','ProductoController@eliminarProducto');
 Route::post('/eliminar/{id}','ProductoController@eliminarProducto');
 Route::get('/eliminarProductoCarrito/{id}','CarritoController@eliminarProductoCarrito');
 Route::post('/eliminarProductoCarrito/{id}','CarritoController@eliminarProductoCarrito');
+Route::get('/producto/editar/{id}', 'ProductoController@editar');
+Route::post('/producto/editar/{id}', 'ProductoController@actualizar');
 
 
 Auth::routes();
