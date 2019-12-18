@@ -38,7 +38,7 @@
         <td>{{$producto['talle']}}</td>
         <td>{{$producto['cantidad']}}</td>
         <td>{{$producto['total']*$producto['cantidad']}}</td>
-        <td> <a href="/eliminar/{{$producto['id']}}"> <i class="fas fa-trash-alt"></i> </a></td>
+        <td> <a href="/eliminarProductoCarrito/{{$producto['id']}}"> <i class="fas fa-trash-alt"></i> </a></td>
         @php
 
   $incrementador++;

@@ -31,7 +31,7 @@ class CarritoController extends Controller
 
 
   }
-  public function eliminarProducto($id){
+  public function eliminarProductoCarrito($id){
 
        //busco el producto por el id
        $product = Carrito::find( $id );
