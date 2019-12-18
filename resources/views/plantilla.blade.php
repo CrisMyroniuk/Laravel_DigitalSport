@@ -79,7 +79,7 @@
 @endif
 @if(Auth::user()==false)
       <div class="dropdown" style="display:inline">
-  <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button style="background-color:rgb(0, 123, 255);width:170px;border-radius:1em;" class="btn btn-secondary dropdown-toggle botonUser" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <i class="fas fa-user-circle" style="font-size:25px;margin-right:30px;"></i> <h5 class="nombreUser" style="display:inline">Invitado</h5>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
