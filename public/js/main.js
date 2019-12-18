@@ -37,12 +37,12 @@ var capturo2 = document.getElementById("resultado");
               capturo2.append(p);
               a.style.color = "black";
               i.style.display = 'block'
-              p.style.border= '1px solid black';
+              p.style.border= '3px solid rgb(0, 123, 255)';
               p.style.margin = '20px';
               p.style.padding = '10px';
               p.style.width = '80%' ;
 
-              
+
               p.style.borderRadius='1em'
               capturo2.style.width = '100%';
 
